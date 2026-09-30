@@ -93,7 +93,8 @@ def rich_text(raw: str) -> str:
 
 raw_source = SOURCE.read_text(encoding='utf-8')
 blocks = [b for b in re.split(r'\n\s*\n', raw_source.strip()) if b.strip()]
-assert blocks[0] == '# AI Engineer 자기소개서' and blocks[1] == '황화인'
+assert blocks[0] == '# AI Engineer 자기소개서'
+body_blocks = blocks[2:] if blocks[1] == '황화인' else blocks[1:]
 chapters = []
 for block in blocks:
     if block.startswith('## '):
@@ -226,7 +227,7 @@ def story():
     flow += [Paragraph(link_row, LINKS), Spacer(1, 10)]
     section = 0
     found = set()
-    for block in blocks[2:]:
+    for block in body_blocks:
         if block.startswith('## '):
             section += 1
             chapter = chapters[section - 1]
