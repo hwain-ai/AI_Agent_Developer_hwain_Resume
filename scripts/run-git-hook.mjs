@@ -18,7 +18,10 @@ try {
   catch (error) { if (error.status !== 1) throw error; }
   const oldHook = previous && path.join(previous, name);
   if (oldHook && fs.existsSync(oldHook)) {
-    const result = spawnSync('sh', [oldHook, ...process.argv.slice(3)], {
+    const shell = process.platform === 'win32'
+      ? path.resolve(git(root, ['--exec-path']).toString().trim(), '../../../usr/bin/sh.exe')
+      : 'sh';
+    const result = spawnSync(shell, [oldHook, ...process.argv.slice(3)], {
       cwd: root, windowsHide: true, input,
       stdio: [input ? 'pipe' : 'inherit', 'inherit', 'inherit']
     });
