@@ -1,0 +1,15 @@
+{
+  "name": "hwain-resume",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "resume:pdf": "node scripts/resume-guard.mjs sync",
+    "lint": "node scripts/resume-guard.mjs lint",
+    "test": "node --test scripts/resume-guard.test.mjs",
+    "hooks:install": "node scripts/install-resume-hooks.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "pdf-lib": "1.17.1"
+  }
+}

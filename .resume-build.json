@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "inputs": {
+    "index.html": "b5b11eb51de109394715f82be16d2d966c8a529247e458c22c7b302bd28448d0",
+    "발표사진 업스케일 원형.png": "9dae0dc923c85de2020f306dcc394e3f210a06ef948b327dda1a5bc0b387658d",
+    "portfolio_qr_code_xl.png": "9499578ff3923f184ac435d478d14415177cd491237d23b23ce7e3a3db48b0b8",
+    "resume.config.json": "387403203fa9e22be2d2748e1999f92e6674258329f22189afe303d6eb1ad28d",
+    "scripts/render-resume.mjs": "6866b1878395d43115421a1b3320e341b469950e21f3c3ffd5735cc174a6f10a",
+    "scripts/resume-common.mjs": "c80ee697bbacd2b7172fa854ed6eb5e1342a13cfd4a8b547490d18b2bdff9578",
+    "package.json": "ea12061e4bede0a49504c03fa0a96f032fa3c63579e86cbe8a20ec4a1228c1c2"
+  },
+  "pdfSha256": "cf129a0f90aebe4eab7fc5fc932037edf28428da124c9233edb30cc8dd0116a8",
+  "pages": 4,
+  "print": {
+    "format": "A4",
+    "scale": 1,
+    "preferCSSPageSize": true,
+    "printBackground": true
+  }
+}

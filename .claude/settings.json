@@ -1,0 +1,27 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell|exec_command|shell_command|functions\\.exec_command",
+        "hooks": [
+          {
+            "command": "node \"G:/내 드라이브/10.Project/18.취업/취업과 이력서/hwain_resume/scripts/agent-resume-hook.mjs\"",
+            "timeout": 120,
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "command": "node \"G:/내 드라이브/10.Project/18.취업/취업과 이력서/hwain_resume/scripts/agent-resume-hook.mjs\"",
+            "timeout": 30,
+            "type": "command"
+          }
+        ]
+      }
+    ]
+  }
+}

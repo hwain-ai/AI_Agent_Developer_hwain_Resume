@@ -1,0 +1,16 @@
+{
+  "html": "index.html",
+  "pdf": "AI Agent Developer 황화인 이력서.pdf",
+  "manifest": ".resume-build.json",
+  "pages": 4,
+  "scale": 1,
+  "inputs": [
+    "index.html",
+    "발표사진 업스케일 원형.png",
+    "portfolio_qr_code_xl.png",
+    "resume.config.json",
+    "scripts/render-resume.mjs",
+    "scripts/resume-common.mjs",
+    "package.json"
+  ]
+}

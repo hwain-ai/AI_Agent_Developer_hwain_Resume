@@ -10,3 +10,7 @@ desktop.ini
 # Google Drive
 *.tmp
 ~$*
+
+# Resume build dependencies and scratch output
+node_modules/
+.resume-qa/
