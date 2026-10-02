@@ -182,7 +182,7 @@
             <li><strong>원문 보존·XSS 대응:</strong> 저장 전 태그 제거를 없애 &lt;TypeError&gt; 같은 오류 메시지를 보존하고, React JSX 문자열 출력으로 HTML 대신 텍스트로 표시.</li>
             <li><strong>파일·DB 실패 처리:</strong> 모든 첨부를 먼저 검사하고 업로드·DB 커밋 실패 시 요청 파일을 보상 삭제. 삭제에 실패한 객체 키는 로그에 남김.</li>
             <li><strong>파일 수명주기:</strong> 삭제된 첨부는 기본 30일 보관 후 정리하고 파일 삭제 성공 시에만 DB에 반영해 실패 건은 재시도.</li>
-            <li><strong>개발 하네스:</strong> 요구사항→기능 문서→Jira 완료 조건→사람 승인→구현·검증을 연결. SessionStart·PreToolUse·Stop으로 최신 규칙 전달·커밋 통제·잔여 작업 기록; 화면·API·로그와 Playwright·Serena로 확인.</li>
+            <li><strong>개발 하네스:</strong> 요구사항→기능 문서→Jira 완료 조건→사람 승인→구현·검증을 연결. SessionStart·PreToolUse·Stop 훅으로 최신 규칙 전달·커밋 통제·잔여 작업 기록. 화면·API·로그와 Playwright·Serena로 확인.</li>
           </ul>
           <p class="result"><strong>결과:</strong> 1:1 게시판 개설 완료. 모든 요구사항 반영완료. 공개 문의·기존 답변 검색과 답변 대기 처리 기능을 완성했다. 정상 파일 뒤에 5MB 초과 파일을 넣은 실패 재현에서 MinIO 잔여 객체 증가량을 <span class="metric">1개→0개</span>로 줄였다.</p>
         </article>
