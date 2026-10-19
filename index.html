@@ -138,7 +138,7 @@
             <li><strong><a href="#all-for-one">9개 AI Agent × 23개 데이터 소스 분양성 보고서</a></strong> · <span class="metric">1~2주 → 약 30분 생성</span><br>도메인 전문가 자문 · <span class="metric">부스전시 · 중앙일보·한국경제 보도자료</span></li>
             <li><strong><a href="#memoria">기억하는 게임 NPC</a></strong> · 응답 <span class="metric">8.5초→2~3초</span> · 페르소나 <span class="metric">71.6%→86.7%</span><br><span class="quote">“AI를 제거하면 핵심 재미가 사라진다”</span>는 심사평 → <span class="metric">언리얼×AI 프로젝트 최종 우승</span></li>
             <li><strong><a href="#company-experiment">회사 개발 자동화 하네스 비교 3차 테스트 <span class="metric">253회 완료</span></a> → <a href="#sentinel">오픈소스 SENTINEL</a></strong><br>실험 결과로 <span class="metric">사내 AI 도입 검토를 지원</span>하고, CRAP·mutation 실효성을 입증해 <span class="metric">3개 언어 플러그인</span> 오픈소스화</li>
-            <li><strong><a href="#copilot">Copilot 평가·개선 하네스</a></strong> · <span class="metric">100개 시나리오 · 277개 실결과 조건</span><br>화면 성공 오판을 외부 API 대조로 바로잡아 <span class="metric">정량 Baseline 확보</span> · 다계층 Hook 가드레일로 AI 작업 무결성 통제</li>
+            <li><strong><a href="#copilot">Copilot 평가·개선 하네스</a></strong> · <span class="metric">실고객 100개 시나리오 · 실결과 조건 검증 · 정량적 개선 기준선(Baseline) 확립</span><br>화면 성공 오판을 외부 API 대조로 바로잡고 · 다계층 Hook 가드레일로 AI 작업 무결성 통제</li>
             <li><strong><a href="#qna">AI 하네스 기반 Q&amp;A 게시판 Full-stack 단독 구축</a></strong><br><span class="metric">6개 화면·12개 API</span> · 권한·동시성·보상 삭제 · 용량 초과 재현의 잔여 객체 증가 <span class="metric">1→0개</span></li>
             <li><strong><a href="#recommendations">베스핀글로벌 이사 · 한국부동산마케팅협회 사무국장 · 원티드랩 POTENUP 운영총괄 추천</a></strong><br>가르치기 어려운 문제 정의·검증 설계 역량을 <strong>“이미 갖추고 있다”</strong>로 평가 (베스핀글로벌 전사 AI-Tech 리드 구상원 이사)</li>
           </ul>
@@ -153,17 +153,17 @@
 <div class="section-heading section-gap"><h2>회사 경력</h2><span>실제 기능 구현 · 실행 통제 · 평가</span></div>
         <div class="company"><strong>베스핀글로벌 <span>GenAI Engineer Intern</span></strong><span>2026.06 - 2026.09</span></div>
 <article class="project" id="copilot">
-          <div class="project-head"><h3><a href="https://app.notion.com/p/517aa1b4174882b8bd33816938a8ff55?pvs=21">Helpnow Foundry Copilot 평가·개선 하네스 ↗</a><span class="capsules"><span class="capsule">100개 시나리오 · 277개 조건</span></span></h3></div>
+          <div class="project-head"><h3><a href="https://app.notion.com/p/517aa1b4174882b8bd33816938a8ff55?pvs=21">Helpnow Foundry Copilot 평가·개선 하네스 ↗</a><span class="capsules"><span class="capsule">실고객 100개 시나리오 · 정량 Baseline</span></span></h3></div>
           <p class="meta">2026.07 · 약 2주 · 단독 설계·구현 | Enterprise Agent Evaluation · Harness Engineering</p>
           <p class="problem"><strong>문제:</strong> 자연어로 업무 자동화를 만드는 Copilot의 기능·화면 오류와 고객 불편이 문서화되지 않아 개선 기준이 없었다. 점검 중 화면의 성공 표시와 메일·시트의 실제 결과가 어긋나고 기존 평가도 생성만 확인하는 문제를 발견했다.</p>
           <ul>
-            <li><strong>실결과 검증:</strong> 100개 시나리오 중 결과 검증 대상 <span class="metric">95개에 277개 조건</span> 정의. 외부 API·실행 출력·워크플로우 상태를 조회하고, Gmail은 실행 시각·수신자, Sheets·문서는 자료 ID로 이번 실행 결과를 확인.</li>
+            <li><strong>실결과 검증:</strong> 실고객 빈도 프롬프트 100개 무오류를 목표로 외부 API·DB 상태를 대조해 화면 성공 오판을 바로잡고, 수정 전후 성과를 수치로 비교하는 <span class="metric">정량적 기준선(Baseline)</span> 확립.</li>
             <li><strong>17개 평가 지표:</strong> 생성·배포·실행·설정·연결·실결과·내부 코드 노출을 코드와 DB의 고정 규칙으로 판정. 필수 검사는 모두 통과해야 하며, LLM Judge의 가독성·화면 일치·요청 충족·선택지 점수와 비용 지표는 참고로 분리.</li>
             <li><strong>Hook 실행 통제:</strong> SessionStart로 최신 기준·실패 기록 제공. PreToolUse로 고정 시험지 변경·직접 서버 제어 명령 패턴을 중단하고, 테이블·컬럼 삭제 코드가 추가된 마이그레이션의 커밋을 차단.</li>
             <li><strong>UX·HITL:</strong> 승인 카드의 내부 번호·(unknown)을 작업 목적 설명으로 변경. 필수값은 입력 카드로 받아 반영·재검사하고, 구현 방식은 사용자 선택 후 진행. 수정 의견을 다음 작업에 전달하며 전송 실패 시 입력 복구.</li>
             <li><strong>기존 문맥 보존:</strong> 워크플로우 조회 결과의 <strong>8,000토큰 제한을 제거</strong>해 큰 자동화의 문맥 전달을 보완. Gmail→Slack 수정 요청에 따른 대상 블록·연결선 변경을 화면에서 확인.</li>
           </ul>
-          <p class="result"><strong>결과:</strong> 반복 시험지·17개 지표·실패 근거로 수정 전후를 비교할 기준을 마련했다. <span class="metric">배포 미시도 22건을 통과로 집계하던 오류</span>를 바로잡고, 계획상 연결 대신 DB에 저장된 실제 연결·설정을 검사했다.</p>
+          <p class="result"><strong>결과:</strong> 단편적인 사후 수정 대신 오류 재발을 방지하는 <span class="metric">정량적 기준선(Baseline)</span>을 확보했다. <span class="metric">배포 미시도 22건을 통과로 집계하던 오류</span>를 바로잡고, 계획상 연결 대신 DB에 저장된 실제 연결·설정을 검사했다.</p>
         </article>
       </div>
       <footer class="footer"><span>황화인 · AI Engineer</span><span>하이라이트 · 회사 경력</span><span>1 / 4</span></footer>
