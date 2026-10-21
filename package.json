@@ -3,7 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "resume:pdf": "node scripts/resume-guard.mjs sync",
+    "resume:pdf": "node scripts/resume-guard.mjs sync-resume",
+    "career:pdf": "node scripts/resume-guard.mjs sync-career",
+    "pdf:all": "node scripts/resume-guard.mjs sync",
     "lint": "node scripts/resume-guard.mjs lint",
     "test": "node --test scripts/resume-guard.test.mjs",
     "hooks:install": "node scripts/install-resume-hooks.mjs"

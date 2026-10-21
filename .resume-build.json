@@ -7,9 +7,9 @@
     "resume.config.json": "387403203fa9e22be2d2748e1999f92e6674258329f22189afe303d6eb1ad28d",
     "scripts/render-resume.mjs": "6866b1878395d43115421a1b3320e341b469950e21f3c3ffd5735cc174a6f10a",
     "scripts/resume-common.mjs": "c80ee697bbacd2b7172fa854ed6eb5e1342a13cfd4a8b547490d18b2bdff9578",
-    "package.json": "ea12061e4bede0a49504c03fa0a96f032fa3c63579e86cbe8a20ec4a1228c1c2"
+    "package.json": "d2a6f75363a2a370a2a8d407421fba7baf43ddd3489990595c39aec20b4aea34"
   },
-  "pdfSha256": "9d13f4a45314e0325c6a2c99625e090a50d58313d45211204898b5d42d8964a8",
+  "pdfSha256": "00f9054e36da8a3b0bdd1bb15f3e9ddbf725e776e5366e2600ca0ae71455366c",
   "pages": 4,
   "print": {
     "format": "A4",

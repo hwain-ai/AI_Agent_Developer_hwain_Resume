@@ -1,0 +1,11 @@
+{
+  "markdown": "output/경력기술서/career_description_draft.md",
+  "pdf": "output/경력기술서/AI Agent Developer 황화인 경력기술서.pdf",
+  "manifest": "output/경력기술서/.career-build.json",
+  "inputs": [
+    "output/경력기술서/career_description_draft.md",
+    "career.config.json",
+    "scripts/render-career.mjs",
+    "scripts/resume-common.mjs"
+  ]
+}

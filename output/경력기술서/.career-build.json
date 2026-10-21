@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "inputs": {
+    "output/경력기술서/career_description_draft.md": "8d7dba4bed10f480481a21e6e231395f86c3cfcf6d0f4d9f9c44a41f8f72369b",
+    "career.config.json": "ef495adf2bf953f693263fd4f27597b8ad9da9314b4e054e987d3e4910ab4457",
+    "scripts/render-career.mjs": "e37bf959d13f1594c9cf3c62726acca1d0897554cb88da2d09d18118a81d9a13",
+    "scripts/resume-common.mjs": "c80ee697bbacd2b7172fa854ed6eb5e1342a13cfd4a8b547490d18b2bdff9578"
+  },
+  "pdfSha256": "b4b9c9feacb8dd1d8ccafa00c7c8452377a69cde2aa6b89d98e5e8d208b43ebe",
+  "pages": 9,
+  "print": {
+    "format": "A4",
+    "printBackground": true,
+    "displayHeaderFooter": true
+  }
+}
