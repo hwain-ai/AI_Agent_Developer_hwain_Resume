@@ -1,12 +1,12 @@
 {
   "version": 1,
   "inputs": {
-    "output/경력기술서/career_description_draft.md": "8cce82516edd7e14bbc4ad77e6eab6b4682004c352d4b4b26488b6929edbbd2b",
+    "output/경력기술서/career_description_draft.md": "0ec4cc3e22b00d02775602be7cf08b5401e55e85863c9d1219d2d60fa1ab6ed7",
     "career.config.json": "ef495adf2bf953f693263fd4f27597b8ad9da9314b4e054e987d3e4910ab4457",
     "scripts/render-career.mjs": "e37bf959d13f1594c9cf3c62726acca1d0897554cb88da2d09d18118a81d9a13",
     "scripts/resume-common.mjs": "c80ee697bbacd2b7172fa854ed6eb5e1342a13cfd4a8b547490d18b2bdff9578"
   },
-  "pdfSha256": "5a6543f563f4dd82cf2d78421ef4d0e0dc2c23a91086002c4f45b5f98c1f086d",
+  "pdfSha256": "1b6a6d5ec3c9daea9cad4869dc87bb7f441d0c0f733c3bac6ab3a90f3913064d",
   "pages": 9,
   "print": {
     "format": "A4",
